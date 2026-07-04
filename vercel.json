@@ -1,12 +1,16 @@
 {
   "version": 2,
   "functions": {
-    "*.php": {
-      "runtime": "vercel-php@0.6.0"
-    },
-    "admin/*.php": {
-      "runtime": "vercel-php@0.6.0"
-    }
+    "index.php": { "runtime": "vercel-php@0.6.0" },
+    "login.php": { "runtime": "vercel-php@0.6.0" },
+    "register.php": { "runtime": "vercel-php@0.6.0" },
+    "detail.php": { "runtime": "vercel-php@0.6.0" },
+    "pembayaran.php": { "runtime": "vercel-php@0.6.0" },
+    "proses_bayar.php": { "runtime": "vercel-php@0.6.0" },
+    "hasil_transaksi.php": { "runtime": "vercel-php@0.6.0" },
+    "tiket_saya.php": { "runtime": "vercel-php@0.6.0" },
+    "logout.php": { "runtime": "vercel-php@0.6.0" },
+    "admin/*.php": { "runtime": "vercel-php@0.6.0" }
   },
   "routes": [
     { "src": "/admin/(.*)", "dest": "/admin/$1" },
